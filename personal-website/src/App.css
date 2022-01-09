@@ -1,17 +1,22 @@
+body { 
+  background-image: url("linedphoto-cGcHSGzSDoM-unsplash.jpg");
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-size: cover;
+  background-position: center center; 
+ }
+
 /* Page */
 .background{
 
-
   color:red;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   border:1px red solid;
-  padding-top: 90px;
-
-
+  margin-top:0px;
+  
 
 }
-
 /* Page */
 
 

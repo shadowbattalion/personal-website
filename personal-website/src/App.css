@@ -1,0 +1,33 @@
+/* Page */
+.background{
+
+
+  color:red;
+  height: 100vh;
+  width: 100vw;
+  border:1px red solid;
+  padding-top: 90px;
+
+
+
+}
+
+/* Page */
+
+
+/* Navbar */
+
+.link-color{
+
+  color:crimson;
+  transition: color 1s;
+
+}
+
+.link-color:hover{
+
+  color:white;
+
+}
+
+/* Navbar */

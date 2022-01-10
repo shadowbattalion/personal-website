@@ -14,16 +14,15 @@ export default function NavigationBar(){
 
 
             <Navbar fixed="top" bg="black" variant="dark" expand="lg">
-            <Container>
-                <Navbar.Brand href="#home">Hafiz</Navbar.Brand>
+            <Container className='m-0'>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                        <Nav.Link href="#home"><span className="link-color">Home</span></Nav.Link>
-                        <Nav.Link href="#work-experiences"><span className="link-color">Work Experiences</span></Nav.Link>
-                        <Nav.Link href="#education"><span className="link-color">Education</span></Nav.Link>
-                        <Nav.Link href="#projects"><span className="link-color">Projects</span></Nav.Link>
-                        <Nav.Link href="#contact"><span className="link-color">Contact</span></Nav.Link>
+                        <Nav.Link href="#home"><span className="link-text">Home</span></Nav.Link>
+                        <Nav.Link href="#work-experiences"><span className="link-text">Experiences</span></Nav.Link>
+                        <Nav.Link href="#education"><span className="link-text">Education</span></Nav.Link>
+                        <Nav.Link href="#projects"><span className="link-text">Projects</span></Nav.Link>
+                        <Nav.Link href="#contact"><span className="link-text">Contact</span></Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>

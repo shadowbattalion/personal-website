@@ -1,19 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Russo+One&display=swap');
+
 body { 
-  background-image: url("linedphoto-cGcHSGzSDoM-unsplash.jpg");
-  /* https://unsplash.com/photos/cGcHSGzSDoM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
+  background-image: url("elti-meshau-bg.jpg");
+  /* https://unsplash.com/photos/2S2F2exmbhw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
   background-repeat: no-repeat; 
   background-attachment: fixed; 
   background-size: cover;
   background-position: center center; 
  }
 
+
+ /* Navbar */
+
+.link-text{
+
+  color:crimson;
+  font-family: 'Russo One', sans-serif;
+  font-size: 30px;
+  /* margin-right: 50px; */
+  transition: color 1s;
+
+}
+
+.link-text:hover{
+
+  color:white;
+
+}
+
+/* Navbar */
+
+/* Home Page */
+
 /* Page */
 .background{
 
-  color:red;
+  color:crimson;
   height: 100vh;
   /* width: 100vw; */
-  border:1px red solid;
+  /* border:1px red solid; */
   margin-top:0px;
   
 
@@ -21,19 +46,66 @@ body {
 /* Page */
 
 
-/* Navbar */
 
-.link-color{
+/* Logo */
+/* #logo{
 
-  color:crimson;
-  transition: color 1s;
+   height:100%;
+
+
+
+} */
+
+/* Logo */
+
+
+
+ /* Intro */
+ /* #intro{
+
+  position:absolute;
+  top: 550px;
+  left: 100px;
+  
+} */
+
+#title{
+
+  font-family: 'Russo One', sans-serif;
+
 
 }
 
-.link-color:hover{
+/* Intro */
 
-  color:white;
+/* Home Page */
+
+@media (min-width:1200px) {
+
+  /* Home Page */
+
+  /* Logo */
+  #logo-box{
+    position:absolute;
+    top: 500px;
+    right: 100px;
+  }
+  /* Logo */
+
+  /* Intro */
+  #intro{
+
+    position:absolute;
+    top: 550px;
+    left: 100px;
+    
+  }
+
+  /* Intro */
+
+  /* Home Page */
 
 }
 
-/* Navbar */
+
+

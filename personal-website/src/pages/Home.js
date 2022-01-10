@@ -11,12 +11,14 @@ export default function Home(){
 
         <React.Fragment>
             <div  id="home" className='background'>
+                
+                <div id="logo-box">
+                    <Image className='logo' src={logo} fluid />
+                </div>
+
                 <div id="intro">
                     <h1 id="title">HELLO! I AM HAFIZ</h1>
                     <h2 id="sub-title">Welcome to my personal website!</h2>
-                </div>
-                <div id="logo-box">
-                    <Image className='logo' src={logo} fluid />
                 </div>
                 
             </div>

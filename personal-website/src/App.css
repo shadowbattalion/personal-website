@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Russo+One&display=swap');
 
 body { 
-  background-image: url("elti-meshau-bg.jpg");
+  background-image: url("images/elti-meshau-bg.jpg");
   /* https://unsplash.com/photos/2S2F2exmbhw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
   background-repeat: no-repeat; 
   background-attachment: fixed; 
@@ -37,73 +37,172 @@ body {
   color:crimson;
   height: 100vh;
   /* width: 100vw; */
-  /* border:1px red solid; */
+
   margin-top:0px;
   
 
 }
 /* Page */
 
+/* Components */
+#components{
 
-
-/* Logo */
-#logo-box{
-
-  margin-top:100px;
-  margin-right: 10% ;
-  margin-left: 10%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
 
 
 }
 
-/* Logo */
+#logo-inner-box{
+  /* border:1px solid red; */
+  position:relative;
+  width: 300px;
+}
 
 
+#logo-ha{
 
-/* Intro */
-#intro{
+  position:absolute;
+  /* left:150px; */
+  /* left:80px;
+  top:50px; */
+  animation: slide-logo-ha 2s ease-in-out 0s 1 forwards;
 
-  margin-top:10px;
-  
-  margin-right: 10% ;
-  margin-left: 10%;
+}
+
+#logo-mim{
+
+  position:absolute;
+  top: 40px;
+  left: 35px;
+  animation: slide-logo-mim 4s ease-in-out 0s 1 forwards;
+}
+
+#logo-ain{
+
+  position:absolute;
+  /* top:100px; */
+  /* left:70px;
+  top:70px; */
+  animation: slide-logo-ain 2s ease-in-out 0s 1 forwards;
   
 }
+
+
+@keyframes slide-logo-ha {
+  0% {
+    left:80px;
+    top:50px;
+    opacity: 0;
+  }
+  100% {
+    left:150px;
+    top:0px;
+    opacity: 1;
+  }
+}
+
+
+@keyframes slide-logo-mim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes slide-logo-ain {
+  0% {
+    left:70px;
+    top:70px;
+    opacity: 0;
+  }
+  100% {
+    top:100px;
+    left:0px;
+    opacity: 1;
+  }
+}
+
 
 #title{
-
+  /* display:none; */
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
   font-family: 'Russo One', sans-serif;
-
+  animation: typing 1.5s linear forwards;
 
 }
 
-/* Intro */
+#sub-title{
+  /* display:none; */
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Advent Pro', sans-serif;
+  animation: typing 1.5s linear 1.5s forwards;
+
+}
+
+@keyframes typing {
+  from { 
+    opacity:0;
+    width: 0%;
+   }
+  to { 
+    opacity: 1;
+    width: 100%;
+   }
+}
+
+/* Components */
+
 
 /* Home Page */
+
+
+
 
 @media (min-width:1200px) {
 
   /* Home Page */
 
-  /* Logo */
-  #logo-box{
+  /* Components */
+
+  #components{
+
+    display: block;
+
+  
+  }
+
+  #logo-outer-box{
     position:absolute;
     top: 500px;
     right: 100px;
   }
-  /* Logo */
 
-  /* Intro */
+   
   #intro{
-
     position:absolute;
     top: 550px;
-    left: 100px;
-    
+    left: 100px;   
   }
 
-  /* Intro */
+
+
+  /* Components */
+  
+  
+ 
 
   /* Home Page */
 

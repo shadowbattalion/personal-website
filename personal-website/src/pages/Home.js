@@ -13,8 +13,8 @@ export default function Home(){
     return(
 
         <React.Fragment>
-            <div  id="home" className='background'>
-                <div id="components">
+            <div  id="home" className='background-home'>
+                <div className="components">
                     <div id="logo-outer-box">
                         <div id="logo-inner-box">
                             <Image id='logo-ha' src={ha} fluid />

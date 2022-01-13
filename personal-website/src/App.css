@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Advent+Pro&family=Russo+One&display=swap');
 
 body { 
   background-image: url("images/elti-meshau-bg.jpg");
@@ -188,18 +188,9 @@ body {
 
 }
 
-.card-properties{
 
 
-  
-  margin-bottom: 80px;
-  height: 500px;
-
-
-
-}
-
-
+/* 
 .card-properties:hover{
 
 
@@ -207,8 +198,85 @@ body {
   animation:2s card forwards;
 
 
+}  */
+
+
+
+.card-container {
+  background-color: transparent;
+  margin-bottom: 80px;
+  height: 500px;
+  perspective: 1000px;
 }
 
+.card-container-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+
+.card-container:hover .card-container-inner{
+
+  transform: rotateY(180deg);
+
+}
+
+
+.card-front, .card-back{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  
+
+
+}
+
+
+.card-front {
+  background-color: crimson;
+  border-radius: 20px;
+}
+
+.card-back {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  transform: rotateY(180deg);
+}
+
+.card-back-inner{
+
+  background-color: black;
+  color: crimson;
+  height: 90%;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  
+  
+  
+  
+
+}
+
+
+.card-back-title{
+
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 50px;
+  margin-left:15%;
+  margin-right:15%;
+
+  color:crimson;
+
+}
 
 @keyframes card {
   0% { 

@@ -3,11 +3,12 @@ import Card from "react-bootstrap/Card"
 
 
 
-export default function Work(){
+export default function Work(props){
 
-
+    console.log(props.animation)
+    
     return(
-
+        
         <React.Fragment>
             <div  id="work-experiences" className='background'>
                 <div className='shade'>
@@ -16,9 +17,9 @@ export default function Work(){
                         
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-5">
                                 
-                            <div className="card-container col" style={{ width: '20rem' }}>
-                                <div className="card-container-inner">
-                                    <div className="card-front">
+                            <div className={"1 "+props.animation.join(' ')} style={{ width: '20rem' }}>
+                                <div className="card-container-inner card-container-inner-animate">
+                                    <div className="card-front" onClick={()=>props.onClick("1")}>
                                         <div className='card-back-inner'>
                                             <h1 className='card-back-title'>HAFIZ</h1>
                                         </div>   
@@ -36,9 +37,9 @@ export default function Work(){
                                 </div>
                             </div>
                                 
-                            <div className="card-container col" style={{ width: '20rem' }}>
-                                <div className="card-container-inner">
-                                    <div className="card-front">
+                            <div className={"2 "+props.animation.join(' ')} style={{ width: '20rem' }}>
+                                <div className="card-container-inner card-container-inner-animate">
+                                    <div className="card-front" onClick={()=>props.onClick("2")}>
                                         <div className='card-back-inner'>
                                             <h1 className='card-back-title'>HAFIZ</h1>
                                         </div>   

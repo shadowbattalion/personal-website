@@ -13,7 +13,7 @@ export default function NavigationBar(){
         <React.Fragment>
 
 
-            <Navbar fixed="top" bg="black" variant="dark" expand="lg">
+            <Navbar collapseOnSelect fixed="top" bg="black" variant="dark" expand="lg">
             <Container className='m-0'>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

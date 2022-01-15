@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios'
+
 
 
 import NavigationBar from './pages/NavigationBar';
@@ -18,7 +20,9 @@ class Base extends React.Component {
   state = {
 
     active:[],
-    inactive:[]
+    inactive:[],
+    experience : [],
+    education : []
 
 
   }
@@ -60,13 +64,28 @@ class Base extends React.Component {
   }
 
 
+  async componentDidMount(){
+
+
+    let details = await axios.get('./json/details.json')
+    // let hafiz_details = details.data;
+    let experience=details.data.experience
+    let education = details.data.education
+
+    this.setState({
+      "experience" : experience,
+      "education" : education
+    })
+  }
+
+
   render (){
     return (
       
         <React.Fragment>
             <NavigationBar />
             <Home />
-            <Work active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse}/>
+            <Work active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} experienceFromJson={this.state.experience}/>
             <Education />
             <Projects />
             <Contact />

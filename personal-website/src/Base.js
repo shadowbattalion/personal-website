@@ -17,18 +17,45 @@ class Base extends React.Component {
 
   state = {
 
-    work_animation_class_name:["card-container", "col"],
-    card_no:0
+    active:[],
+    inactive:[]
 
 
   }
 
 
-  click = (card_no_chosen) =>{
+  click = (card_no) =>{
 
     this.setState({
-      work_animation_class_name: [ card_no_chosen, ...this.state.work_animation_class_name,"card-container-animate"]
+      active: [...this.state.active, card_no]
     });
+
+
+
+    let card_no_index=this.state.inactive.indexOf(card_no)
+
+    this.setState({
+      inactive: [...this.state.inactive.slice(0, card_no_index), ...this.state.inactive.slice(card_no_index + 1)]
+    });
+
+  }
+
+
+  click_reverse = (card_no) =>{
+
+
+    this.setState({
+      inactive: [...this.state.inactive, card_no]
+    });
+
+
+    let card_no_index = this.state.active.indexOf(card_no)
+
+    this.setState({
+      active: [...this.state.active.slice(0, card_no_index), ...this.state.active.slice(card_no_index + 1)
+      ]
+    });
+
 
   }
 
@@ -39,7 +66,7 @@ class Base extends React.Component {
         <React.Fragment>
             <NavigationBar />
             <Home />
-            <Work animation={this.state.work_animation_class_name} onClick={this.click}/>
+            <Work active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse}/>
             <Education />
             <Projects />
             <Contact />

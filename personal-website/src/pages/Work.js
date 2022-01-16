@@ -29,7 +29,7 @@ export default function Work(props){
                                     <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>{props.experienceFromJson.length!==0?props.experienceFromJson[i].duration:""}</Card.Subtitle>
                                     <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>{props.experienceFromJson.length!==0?props.experienceFromJson[i].type:""}</Card.Subtitle>
                                     <div className="card-divider"></div>
-                                    <Card.Text className="card-text" style={{fontSize:"20px"}}>
+                                    <Card.Text className="card-text" style={{fontSize:"25px"}}>
                                             {props.experienceFromJson.length!==0?props.experienceFromJson[i].description.map(desc => <div><p>{desc}</p><hr className='card-text-hr'></hr></div>):""}
                                     </Card.Text>
                                 </Card.Body>   

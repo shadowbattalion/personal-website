@@ -75,6 +75,33 @@
             "cert":"Offensive Security Certified Professional (OSCP)"
         }
         
+    ],
+    "projects":[
+        {
+            "title":"The Merchant",
+            "association":"Trent Global",
+            "website":"https://competent-davinci-649e42.netlify.app/",
+            "github":"https://github.com/shadowbattalion/TrentProject3Client.git",
+            "description":"Developed a mobile-responsive online shopping cart for vendors to sell online games to customers",
+            "image":""
+        },
+        {
+            "title":"GhostHub",
+            "association":"Trent Global",
+            "website":"https://affectionate-wescoff-87accd.netlify.app",
+            "github":"https://github.com/shadowbattalion/TrentProject2Client.git",
+            "description":"Developed a mobile-responsive social media platform for users, paranormal investigators and urban explorers, to share their paranormal experiences and images as evidence. Users can also comment on the cases.",
+            "image":""
+        },
+        {
+            "title":"Car Park Finder",
+            "association":"TrentGlobal",
+            "website":"https://shadowbattalion.github.io/TrentGlobalProject1/",
+            "github":"https://github.com/shadowbattalion/TrentGlobalProject1.git",
+            "description":"Developed a mobile-responsive and interactive map that help users get the status of car parks in Singapore.",
+            "image":""
+        }
+        
     ]
 
 

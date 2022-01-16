@@ -221,7 +221,7 @@ body {
 
 .card-container-animate-reverse .card-container-inner-animate-reverse{
 
-  animation:2s card-reverse forwards;
+  animation:1s card-reverse forwards;
 
 
 }
@@ -358,8 +358,9 @@ body {
 
 .project-card-text{
 
+  margin-top:10px;
   overflow: auto;
-  height: 90px;
+  height: 125px;
 
 
 }

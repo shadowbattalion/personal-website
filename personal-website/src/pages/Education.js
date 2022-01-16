@@ -27,7 +27,7 @@ export default function Education(props){
                                     <Card.Title style={{fontSize:"30px", width:"90%"}}>{props.educationFromJson.length!==0?props.educationFromJson[i].institute:""}</Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>{props.educationFromJson.length!==0?props.educationFromJson[i].duration:""}</Card.Subtitle>
                                     <div className="card-divider"></div>
-                                    <Card.Text className="card-text" style={{fontSize:"20px"}}>{props.educationFromJson.length!==0?props.educationFromJson[i].cert:""}</Card.Text>
+                                    <Card.Text className="card-text" style={{fontSize:"25px"}}>{props.educationFromJson.length!==0?props.educationFromJson[i].cert:""}</Card.Text>
                                 </Card.Body>   
                             </div>
                         </div>

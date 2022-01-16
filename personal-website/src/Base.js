@@ -22,7 +22,8 @@ class Base extends React.Component {
     active:[],
     inactive:[],
     experience : [],
-    education : []
+    education : [],
+    projects: []
 
 
   }
@@ -70,10 +71,12 @@ class Base extends React.Component {
     let details = await axios.get('./json/details.json')
     let experience=details.data.experience
     let education = details.data.education
+    let projects = details.data.projects
 
     this.setState({
       "experience" : experience,
-      "education" : education
+      "education" : education,
+      "projects" : projects
     })
   }
 
@@ -86,7 +89,7 @@ class Base extends React.Component {
             <Home />
             <Work active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} experienceFromJson={this.state.experience}/>
             <Education active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} educationFromJson={this.state.education}/>
-            <Projects educationFromJson={this.state.education}/>
+            <Projects projectsFromJson={this.state.projects}/>
             <Contact />
         </React.Fragment>
     

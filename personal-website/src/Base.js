@@ -68,7 +68,6 @@ class Base extends React.Component {
 
 
     let details = await axios.get('./json/details.json')
-    // let hafiz_details = details.data;
     let experience=details.data.experience
     let education = details.data.education
 
@@ -86,8 +85,8 @@ class Base extends React.Component {
             <NavigationBar />
             <Home />
             <Work active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} experienceFromJson={this.state.experience}/>
-            <Education />
-            <Projects />
+            <Education active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} educationFromJson={this.state.education}/>
+            <Projects educationFromJson={this.state.education}/>
             <Contact />
         </React.Fragment>
     

@@ -1,19 +1,80 @@
 {
     "experience":[
         {
-            "experience1":"test"
+            "location":"HackerTrail",
+            "type":"SGUnitedTraineeship",
+            "duration":"Sep 2020 - Mar 2021",
+            "position":"Python Developer",
+            "description":[
+                "Developed Telegram ChatBot for internal usage that facilitates the company's daily operations.",
+                "Demonstrated the end to end implementation of the software from gathering user requirements",
+                "Planning, coding and implementation by actively collecting information from internal users",
+                "Planning the minimum viable product and implementing the code based on the plan",
+                "Involved in the development of HackerTrail's community site",
+                "Demonstrated Django's best coding practices by referring to Django's websites" 
+            ]
         },
         {
-            "experience2":"test"
+            "location":"RedPoint Security Private Limited",
+            "type":"Freelance",
+            "duration":"Jan 2020 - Jun 2020",
+            "position":"Freelance Junior Consultant",
+            "description":[
+                "Carry out penetration testing on web applications to discover vulnerabilities and system gaps",
+                "Constantly keep abreast with the latest security threats and trends"
+            ]
+        },
+        {
+            "location":"RedPoint Security Private Limited",
+            "type":"Internship",
+            "duration":"Jan 2019- Dec 2019",
+            "position":"Intern",
+            "description":[
+                "Researched and developed the ADDA (Automated Device Discovery & Assessor) plug-in platform program as part of the Capstone Project using Python for information gathering",
+                "Developed a plug-in for WhatWeb to identify web technologies",
+                "Created a tool to automate the rebuilding of the RAID array in restoring the file system towards identifying trophies for the Digital Forensics module using Python",
+                "Collaborated with the team in developing a question bank application using Java to enable teachers to add or remove questions in the question bank while allowing students to generate the available questions for practice",
+                "Deployed an automated Denial of Service monitoring solution using Reinforcement Learning and Tensorflow"
+            ]
+        },
+        {
+            "location":"Singtel (NCS)",
+            "type":"Internship",
+            "duration":"Mar 2015 - Sep 2015",
+            "position":"Security Management Intern",
+            "description":[
+                "Developed proof of concept to resolve defacement issues on web servers",
+                "Generated a batch file to restore the defaced web page upon the Tripwire software alert via the Robocopy software",
+                "Researched and understand deep packet inspection technology and utilised it in creating a dashboard to enhance network traffic monitoring as part of the Final Year Project",
+                "Designed a simplified combined search engine program to enable users to retrieve web documents from the internet based on a search phrase including Java threads implementation",
+                "Designed and developed a website",
+                "Co-developed a website involving client-server interaction in enabling users to book flights based on MVC framework with Java Servlet Technology (Java Enterprise)",
+                "Worked with the team in creating a Java application to store and retrieve student module records via Java Swing components"
+            ]
         }
     ],
     "education":[
         {
-            "experience1":"test"
+            "institute":"Trent Global College",
+            "duration":"Aug 2021 - Dec 2021",
+            "cert":"Diploma in Web Application Development"
         },
         {
-            "experience2":"test"
+            "institute":"Singapore Institute of Technology",
+            "duration":"Sep 2016 - Jun 2020",
+            "cert":"BEng (Hons) Information & Communications Technology (Information Security)"
+        },
+        {
+            "institute":"Singapore Polytechnic",
+            "duration":"Mar 2013 - Mar 2016",
+            "cert":"Diploma in Infocomm Security Management (DISM)"
+        },
+        {
+            "institute":"Offensive Security",
+            "duration":"AY2019/2020",
+            "cert":"Offensive Security Certified Professional (OSCP)"
         }
+        
     ]
 
 

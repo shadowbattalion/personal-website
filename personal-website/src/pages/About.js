@@ -27,7 +27,7 @@ export default function Projects(){
                         </Card>
                         
                        
-
+ 
                     </div>  
                 </div>
             </div>

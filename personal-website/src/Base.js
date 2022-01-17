@@ -89,7 +89,7 @@ class Base extends React.Component {
             <Home />
             <Work active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} experienceFromJson={this.state.experience}/>
             <Education active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} educationFromJson={this.state.education}/>
-            <Projects projectsFromJson={this.state.projects}/>
+            <Projects active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} projectsFromJson={this.state.projects}/>
             <Contact />
         </React.Fragment>
     

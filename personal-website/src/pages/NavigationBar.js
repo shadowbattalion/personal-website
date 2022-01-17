@@ -22,7 +22,7 @@ export default function NavigationBar(){
                         <Nav.Link href="#work-experiences"><span className="link-text">Experiences</span></Nav.Link>
                         <Nav.Link href="#education"><span className="link-text">Education</span></Nav.Link>
                         <Nav.Link href="#projects"><span className="link-text">Projects</span></Nav.Link>
-                        <Nav.Link href="#contact"><span className="link-text">Contact</span></Nav.Link>
+                        <Nav.Link href="#contacts"><span className="link-text">Contact</span></Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>

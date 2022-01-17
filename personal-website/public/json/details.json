@@ -82,24 +82,42 @@
             "association":"Trent Global",
             "website":"https://competent-davinci-649e42.netlify.app/",
             "github":"https://github.com/shadowbattalion/TrentProject3Client.git",
-            "description":"Developed a mobile-responsive online shopping cart for vendors to sell online games to customers",
-            "image":""
+            "description":"Developed a mobile-responsive online shopping cart for vendors to sell online games to customers"
         },
         {
             "title":"GhostHub",
             "association":"Trent Global",
             "website":"https://affectionate-wescoff-87accd.netlify.app",
             "github":"https://github.com/shadowbattalion/TrentProject2Client.git",
-            "description":"Developed a mobile-responsive social media platform for users, paranormal investigators and urban explorers, to share their paranormal experiences and images as evidence. Users can also comment on the cases.",
-            "image":""
+            "description":"Developed a mobile-responsive social media platform for users, paranormal investigators and urban explorers, to share their paranormal experiences and images as evidence. Users can also comment on the cases."
         },
         {
             "title":"Car Park Finder",
             "association":"TrentGlobal",
             "website":"https://shadowbattalion.github.io/TrentGlobalProject1/",
             "github":"https://github.com/shadowbattalion/TrentGlobalProject1.git",
-            "description":"Developed a mobile-responsive and interactive map that help users get the status of car parks in Singapore.",
-            "image":""
+            "description":"Developed a mobile-responsive and interactive map that help users get the status of car parks in Singapore."
+        },
+        {
+            "title":"Personal Website",
+            "association":"Self",
+            "website":"",
+            "github":"",
+            "description":"This personal website is created from scratch with HTML, CSS, Javascript, React and React Bootstrap!"
+        },
+        {
+            "title":"Future Projects",
+            "association":"Self",
+            "website":"",
+            "github":"",
+            "description":"I am in love with doing frontend development and I will be making more soon!"
+        },
+        {
+            "title":"Future Projects With You!",
+            "association":"Future companies",
+            "website":"",
+            "github":"",
+            "description":"I am eager to put what I have learnt about frontend in practice and I wish to make beautiful and user friendly websites with you!"
         }
         
     ]

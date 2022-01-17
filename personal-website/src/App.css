@@ -28,6 +28,7 @@ body {
 }
 
 
+
  /* Navbar */
 
 .link-text{
@@ -164,14 +165,14 @@ body {
 /* Home Page */
 
 
-/* Work Experience Page */
+/* Card Pages */
 
 
 .shade{
 
   padding-top: 100px;
   background-color: rgba(0,0,0,0.4);
-  
+  min-height:100vh;
 
 
 }
@@ -341,38 +342,44 @@ body {
 
 
 
-.project-card-container{
-
-  margin-bottom: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 500px;
-
-  background-color: #fde8eb;
-  color: black;
-  border-radius: 20px;
-  font-family: 'Advent Pro', sans-serif;
+/* Card Pages */
 
 
-}
 
-.project-card-text{
 
-  margin-top:10px;
-  overflow: auto;
-  height: 125px;
+/* Contacts Page */
+
+
+
+.contact-title{
+
+  font-family: 'Russo One', sans-serif;
+  font-size: 30px;
+  margin-bottom:40px;
 
 
 }
 
-/* Work Experience Page */
+
+
+.contact-subtitle{
+
+  
+
+
+
+}
+
+
+/* Contacts Page */
+
+
 
 @media (min-width:1200px) {
 
   /* Home Page */
 
-  /* Components */
-
+  
   .components{
 
     display: block;
@@ -393,10 +400,6 @@ body {
     left: 100px;   
   }
 
-
-
-  /* Components */
-  
   
  
 

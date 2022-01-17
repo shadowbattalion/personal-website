@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from "react-bootstrap/Card"
-
+import CloseButton from 'react-bootstrap/esm/CloseButton'
+import Button from 'react-bootstrap/Button'
 
 export default function Projects(props){
 
@@ -15,23 +16,28 @@ export default function Projects(props){
         
             <React.Fragment  key={i}>
 
+                <div className={props.active.includes("p"+i)?"card-container col card-container-animate":props.inactive.includes("p"+i)?"card-container col card-container-animate-reverse":"card-container col"} style={{ width: '20rem' }}>
+                    <div className={props.active.includes("p"+i)?"card-container-inner card-container-inner-animate":props.inactive.includes("p"+i)?"card-container-inner card-container-inner-animate-reverse":"card-container-inner"}> 
+                        <div className="card-front" onClick={()=>props.onClick("p"+i)}>
+                            <div className='card-back-inner'>
+                                <h1 className='card-back-title'>HAFIZ</h1>
+                            </div>   
+                        </div>
+                        <div className="card-back">     
+                            <Card.Body className='card-body'>
+                                <CloseButton  onClick={()=>props.onClickReverseAnimate("p"+i)} style={{ position:"absolute", right:"20px"}} />
+                                <Card.Title style={{fontSize:"30px", width:"90%"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].title:""}</Card.Title>
+                                <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].association:""}</Card.Subtitle>
+                                <div className="card-divider"></div>
+                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].website!=="" ? <small>Website: <a href={props.projectsFromJson[i].website}>{props.projectsFromJson[i].title+" Website"}</a></small>:""}
+                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].github!=="" ? <small>Github: <a href={props.projectsFromJson[i].github}>{props.projectsFromJson[i].title+" Github"}</a></small>:""}
+                                <Card.Text className="card-text" style={{fontSize:"25px"}}>{props.projectsFromJson.length!==0 && props.projectsFromJson[i].description!==""?props.projectsFromJson[i].description:""}</Card.Text>
+                            </Card.Body>   
+                        </div>
+                    </div>
+                </div>
 
-                <Card className="project-card-container" style={{ width: '20rem' }}>
-                    {/* <Card.Img variant="top" src="holder.js"/> */}
-                    <div size={{height:"100px", border:"1px red solid"}}></div>
-                    <Card.Body>
-                        <Card.Title style={{fontSize:"30px"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].title:""}</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].association:""}</Card.Subtitle>
-                        <div className="card-divider"></div>
-                        <small>Website: <a href={props.projectsFromJson.length!==0?props.projectsFromJson[i].website:""}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].title+" Website":""}</a> </small>
-                        <small>Github: <a href={props.projectsFromJson.length!==0?props.projectsFromJson[i].website:""}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].title+" Github":""}</a> </small>
-                        <Card.Text className="project-card-text" style={{fontSize:"20px"}}>
-                            <p>{props.projectsFromJson.length!==0?props.projectsFromJson[i].description:""}</p>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-
-
+               
             </React.Fragment>
             
             )
@@ -52,34 +58,6 @@ export default function Projects(props){
                         
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-5">
                             {card_jsx}
-                            <Card className="project-card-container" style={{ width: '20rem' }}>
-                                <Card.Img variant="top" size={{height:"20px", border:"1px red solid"}}/>
-                                <Card.Body>
-                                    <Card.Title style={{fontSize:"30px"}}>Personal Website</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>Self</Card.Subtitle>
-                                    <div className="card-divider"></div>
-                                    <Card.Text className="project-card-text" style={{fontSize:"20px"}}>
-                                        <p>This personal website is created from scratch!</p>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                            <Card className="project-card-container" style={{ width: '20rem' }}>
-                                <Card.Img variant="top" size={{height:"20px", border:"1px red solid"}}/>
-                                <Card.Body>
-                                    <Card.Title style={{fontSize:"30px"}}>Future Projects</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>Self</Card.Subtitle>
-                                    <div className="card-divider"></div>
-                                </Card.Body>
-                            </Card>
-                            <Card className="project-card-container" style={{ width: '20rem' }}>
-                                <Card.Img variant="top" size={{height:"20px", border:"1px red solid"}}/>
-                                <Card.Body>
-                                    <Card.Title style={{fontSize:"30px"}}>Future Projects With You!</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}></Card.Subtitle>
-                                    <div className="card-divider"></div>
-                                </Card.Body>
-                            </Card>
-
                         </div>
 
                     </div>  
@@ -87,53 +65,6 @@ export default function Projects(props){
             </div>
 
         </React.Fragment>
-
-    )
-
-
-    return(
-
-        <React.Fragment>
-            <div  id="projects" className='background'>
-                <div className='shade components'>
-                    <h1 className='panel-title'>Projects</h1>
-                    <Card className="card-properties" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            {/* <Button variant="primary">Go somewhere</Button> */}
-                        </Card.Body>
-                    </Card>
-                    <Card className="card-properties" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            {/* <Button variant="primary">Go somewhere</Button> */}
-                        </Card.Body>
-                    </Card> 
-                    <Card className="card-properties" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            {/* <Button variant="primary">Go somewhere</Button> */}
-                        </Card.Body>
-                    </Card>                     
-                </div>
-            </div>
-        </React.Fragment>
-
 
     )
 

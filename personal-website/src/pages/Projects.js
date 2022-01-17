@@ -19,7 +19,7 @@ export default function Projects(props){
                     <div className={props.active.includes("p"+i)?"card-container-inner card-container-inner-animate":props.inactive.includes("p"+i)?"card-container-inner card-container-inner-animate-reverse":"card-container-inner"}> 
                         <div className="card-front" onClick={()=>props.onClick("p"+i)}>
                             <div className='card-back-inner'>
-                                <h1 className='card-back-title'>HAFIZ</h1>
+                                <h1 className='card-back-title'>{props.projectsFromJson.length!==0?props.projectsFromJson[i].title:""}</h1>
                             </div>   
                         </div>
                         <div className="card-back">     

@@ -18,7 +18,7 @@ export default function Education(props){
                     <div className={props.active.includes("e"+i)?"card-container-inner card-container-inner-animate":props.inactive.includes("e"+i)?"card-container-inner card-container-inner-animate-reverse":"card-container-inner"}> 
                         <div className="card-front" onClick={()=>props.onClick("e"+i)}>
                             <div className='card-back-inner'>
-                                <h1 className='card-back-title'>HAFIZ</h1>
+                                <h1 className='card-back-title'>{props.educationFromJson.length!==0?props.educationFromJson[i].institute:""}</h1>
                             </div>   
                         </div>
                             <div className="card-back">     

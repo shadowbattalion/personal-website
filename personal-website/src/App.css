@@ -339,11 +339,12 @@ body {
 .card-back-title{
 
   font-family: 'Comfortaa', sans-serif;
-  font-size: 50px;
-  margin-left:15%;
-  margin-right:15%;
-
+  font-size: 40px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
   color:crimson;
+  width:90%;
 
 }
 

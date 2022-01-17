@@ -73,7 +73,7 @@ class Base extends React.Component {
     let experience=details.data.experience
     let education = details.data.education
     let projects = details.data.projects
-   
+    
     this.setState({
       "experience" : experience,
       "education" : education,

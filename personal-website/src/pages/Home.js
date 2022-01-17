@@ -15,6 +15,7 @@ export default function Home(){
         <React.Fragment>
             <div  id="home" className='background-home'>
                 <div className="components">
+                    <small  id="image-credit">Photo by <a href="https://unsplash.com/@eltimeshau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Elti Meshau</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></small>
                     <div id="logo-outer-box">
                         <div id="logo-inner-box">
                             <Image id='logo-ha' src={ha} fluid />

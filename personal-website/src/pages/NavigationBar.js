@@ -19,6 +19,7 @@ export default function NavigationBar(){
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                         <Nav.Link href="#home"><span className="link-text">Home</span></Nav.Link>
+                        <Nav.Link href="#about"><span className="link-text">About</span></Nav.Link>
                         <Nav.Link href="#work-experiences"><span className="link-text">Experiences</span></Nav.Link>
                         <Nav.Link href="#education"><span className="link-text">Education</span></Nav.Link>
                         <Nav.Link href="#projects"><span className="link-text">Projects</span></Nav.Link>

@@ -7,6 +7,7 @@ import axios from 'axios'
 
 import NavigationBar from './pages/NavigationBar';
 import Home from './pages/Home'
+import About from './pages/About'
 import Work from './pages/Work';
 import Education from './pages/Education';
 import Projects from './pages/Projects';
@@ -87,6 +88,7 @@ class Base extends React.Component {
         <React.Fragment>
             <NavigationBar />
             <Home />
+            <About/>
             <Work active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} experienceFromJson={this.state.experience}/>
             <Education active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} educationFromJson={this.state.education}/>
             <Projects active={this.state.active} inactive={this.state.inactive} onClick={this.click} onClickReverseAnimate={this.click_reverse} projectsFromJson={this.state.projects}/>

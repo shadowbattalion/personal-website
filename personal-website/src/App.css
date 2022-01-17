@@ -28,6 +28,13 @@ body {
 }
 
 
+.subtitle{
+
+  font-family: 'Advent Pro', sans-serif;
+  margin-bottom:40px;
+
+
+}
 
  /* Navbar */
 
@@ -48,6 +55,22 @@ body {
 
 /* Navbar */
 
+/* About */
+
+.about-text{
+
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 20px;
+
+
+
+
+}
+
+
+
+
+/* About */
 
 
 
@@ -61,6 +84,16 @@ body {
   
 
 }
+
+#image-credit{
+
+  font-family: 'Advent Pro', sans-serif;
+  position:absolute;
+  top:100px;
+  right:25px;
+
+}
+
 
 #logo-inner-box{
   /* border:1px solid red; */
@@ -180,14 +213,15 @@ body {
 .panel-title{
 
   font-family: 'Russo One', sans-serif;
-  font-size: 30px;
-  margin-bottom:40px;
+  font-size: 40px;
+  
   
   
 
 
 
 }
+
 
 
 
@@ -354,7 +388,7 @@ body {
 .contact-title{
 
   font-family: 'Russo One', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom:40px;
 
 
@@ -362,13 +396,7 @@ body {
 
 
 
-.contact-subtitle{
 
-  font-family: 'Advent Pro', sans-serif;
-  
-
-
-}
 
 
 /* Contacts Page */
@@ -404,6 +432,25 @@ body {
  
 
   /* Home Page */
+
+
+
+  /* About */
+
+.about-text{
+
+  
+  font-size: 30px;
+
+
+
+
+}
+
+
+
+
+/* About */
 
 }
 

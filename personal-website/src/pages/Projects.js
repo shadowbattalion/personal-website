@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from "react-bootstrap/Card"
 import CloseButton from 'react-bootstrap/esm/CloseButton'
-import Button from 'react-bootstrap/Button'
 
 export default function Projects(props){
 
@@ -55,6 +54,7 @@ export default function Projects(props){
                 <div className='shade'>
                     <div class="container components">
                         <h1 className='panel-title'>Projects</h1>
+                        <h2 className='subtitle'>(Pick a card)</h2>
                         
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-5">
                             {card_jsx}

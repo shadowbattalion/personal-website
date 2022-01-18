@@ -173,7 +173,7 @@ body {
 
 #intro{
   opacity: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: black;
   padding:20px;
   border-radius:25px;
   animation: title-shade 3s linear forwards;   
@@ -232,7 +232,7 @@ body {
 .shade{
 
   padding-top: 100px;
-  background-color: rgba(0,0,0,0.5);
+  /* background-color: rgba(0,0,0,0.5); */
   min-height:100vh;
 
 
@@ -453,10 +453,7 @@ body {
   #intro{
     position:absolute;
     top: 550px;
-    left: 100px;
-    background-color: rgba(0,0,0,0.5);
-    padding:20px;
-    border-radius:25px;   
+    left: 100px; 
   }
 
   

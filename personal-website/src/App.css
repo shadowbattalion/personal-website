@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Advent+Pro&family=Russo+One&display=swap');
 
 body { 
-  background-image: url("images/elti-meshau-bg.jpg");
+  background-image: url("images/nasa-Q1p7bh3SHj8-unsplash.jpg");
   /* https://unsplash.com/photos/2S2F2exmbhw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
   background-repeat: no-repeat; 
   background-attachment: fixed; 
@@ -40,7 +40,7 @@ body {
 
 .link-text{
 
-  color:crimson;
+  color:#0c94fa;
   font-family: 'Russo One', sans-serif;
   font-size: 30px;
   transition: color 1s;
@@ -49,7 +49,7 @@ body {
 
 .link-text:hover{
 
-  color:white;
+  color:#425372;
 
 }
 
@@ -78,10 +78,17 @@ body {
 /* Home Page */
 
 .background-home{
-  color:crimson; 
+  color:#0c94fa; 
   height: 100vh;
   margin-top:0px;
   
+
+}
+
+
+#title-name{
+
+  color:#f5f9ff;
 
 }
 
@@ -164,6 +171,14 @@ body {
 }
 
 
+#intro{
+  opacity: 0;
+  background-color: rgba(0,0,0,0.5);
+  padding:20px;
+  border-radius:25px;
+  animation: title-shade 3s linear forwards;   
+}
+
 #title{
   opacity: 0;
   overflow: hidden;
@@ -172,6 +187,9 @@ body {
   animation: typing 1.5s linear forwards;
 
 }
+
+
+
 
 #sub-title{
   opacity: 0;
@@ -182,6 +200,7 @@ body {
 
 }
 
+
 @keyframes typing {
   from { 
     opacity:0;
@@ -190,6 +209,15 @@ body {
   to { 
     opacity: 1;
     width: 100%;
+   }
+}
+
+@keyframes title-shade {
+  from { 
+    opacity:0;
+   }
+  to { 
+    opacity: 1;
    }
 }
 
@@ -275,12 +303,12 @@ body {
 
 
 .card-front {
-  background-color: crimson;
+  background-color: #0c94fa;
   border-radius: 20px;
 }
 
 .card-back {
-  background-color: #fde8eb;
+  background-color: #f5f9ff;
   color: black;
   border-radius: 20px;
   transform: rotateY(180deg);
@@ -321,8 +349,7 @@ body {
 
 .card-back-inner{
 
-  background-color: black;
-  color: crimson;
+  background-color: #425372;
   height: 90%;
   margin: 20px;
   border-radius: 20px;
@@ -343,7 +370,7 @@ body {
   margin-left:auto;
   margin-right:auto;
   text-align: center;
-  color:crimson;
+  color:#0c94fa;
   width:90%;
 
 }
@@ -426,7 +453,10 @@ body {
   #intro{
     position:absolute;
     top: 550px;
-    left: 100px;   
+    left: 100px;
+    background-color: rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius:25px;   
   }
 
   

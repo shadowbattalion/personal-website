@@ -25,7 +25,7 @@ export default function Home(){
                     </div>
 
                     <div id="intro">
-                        <h1 id="title">HELLO! I AM HAFIZ</h1>
+                        <h1 id="title">HELLO! I AM <span id="title-name">HAFIZ</span></h1>
                         <h2 id="sub-title">Welcome to my personal website!</h2>
                     </div>
                 </div>   

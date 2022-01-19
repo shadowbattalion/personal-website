@@ -14,10 +14,10 @@ export default function NavigationBar(){
 
 
             <Navbar collapseOnSelect fixed="top" bg="black" variant="dark" expand="lg">
-            <Container className='m-0'>
+            <Container className="mx-auto">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
+                <Nav className="mx-auto">
                         <Nav.Link href="#home"><span className="link-text">Home</span></Nav.Link>
                         <Nav.Link href="#about"><span className="link-text">About</span></Nav.Link>
                         <Nav.Link href="#work-experiences"><span className="link-text">Experiences</span></Nav.Link>

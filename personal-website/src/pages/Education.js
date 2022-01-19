@@ -50,7 +50,7 @@ export default function Education(props){
                 <div className='shade'>
                     <div class="container components">
                         <h1 className='panel-title'>Education</h1>
-                        <h2 className='subtitle'>(Pick a card)</h2>
+                        <h2 className='panel-subtitle'>(Pick a card)</h2>
                         
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-5">
                             {card_jsx}

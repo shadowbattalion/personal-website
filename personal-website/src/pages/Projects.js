@@ -27,9 +27,10 @@ export default function Projects(props){
                                 <CloseButton  onClick={()=>props.onClickReverseAnimate("p"+i)} style={{ position:"absolute", right:"20px"}} />
                                 <Card.Title style={{fontSize:"30px", width:"90%"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].title:""}</Card.Title>
                                 <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].association:""}</Card.Subtitle>
+                                
+                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].website!=="" ? <h5>Website: <a className='website-link' href={props.projectsFromJson[i].website}>{props.projectsFromJson[i].title+" Website"}</a></h5>:""}
+                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].github!=="" ? <h5>Github: <a className='website-link' href={props.projectsFromJson[i].github}>{props.projectsFromJson[i].title+" Github"}</a></h5>:""}
                                 <div className="card-divider"></div>
-                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].website!=="" ? <small>Website: <a href={props.projectsFromJson[i].website}>{props.projectsFromJson[i].title+" Website"}</a></small>:""}
-                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].github!=="" ? <small>Github: <a href={props.projectsFromJson[i].github}>{props.projectsFromJson[i].title+" Github"}</a></small>:""}
                                 <Card.Text className="card-text" style={{fontSize:"25px"}}>{props.projectsFromJson.length!==0 && props.projectsFromJson[i].description!==""?props.projectsFromJson[i].description:""}</Card.Text>
                             </Card.Body>   
                         </div>

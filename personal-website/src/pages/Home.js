@@ -1,10 +1,9 @@
 import React from 'react'
-// import Button from 'react-bootstrap/Button'
 import Image from 'react-bootstrap/Image';
-// import logo from '../logo.png'
 import ha from '../images/ha.png'
 import ain from '../images/ain.png'
 import mim from '../images/mim.png'
+
 
 
 export default function Home(){
@@ -29,6 +28,8 @@ export default function Home(){
                         <h1 id="title">HELLO! I AM <span id="title-name">HAFIZ</span></h1>
                         <h2 id="sub-title">Welcome to my personal website!</h2>
                     </div>
+
+                    
                 </div>   
             </div>
 

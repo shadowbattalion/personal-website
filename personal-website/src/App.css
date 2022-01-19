@@ -155,6 +155,8 @@ body {
 }
 
 
+
+
 @keyframes slide-logo-ha {
   0% {
     left:80px;
@@ -429,7 +431,7 @@ body {
     transform: rotateY(0deg) scale(1);
    }
   50% { 
-    transform: rotateY(180deg) scale(1.3);
+    transform: rotateY(180deg) scale(1.1);
    }
    100%{
     transform: rotateY(180deg) scale(1);
@@ -471,15 +473,60 @@ body {
 
 
 
-.contact-title{
+#contact-title{
 
   font-family: 'Bebas Neue', cursive;
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom:40px;
 
 
 }
 
+
+.content-group{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+  
+
+}
+
+.icon-group{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+  
+}
+
+
+.icon{
+
+  font-size: 50px;
+  color:#0c94fa;
+ 
+
+
+
+}
+
+
+.icon-frame{
+
+  padding:20px;
+  background-color: #425372;
+  border-radius: 50px;
+
+
+
+
+
+}
 
 
 
@@ -526,6 +573,34 @@ body {
   /* Home Page */
 
 
+
+  /* Contacts Page */
+
+
+
+  #contact-title{
+
+    font-size: 75px;
+    
+
+
+  }
+
+
+ 
+
+  .icon{
+
+    font-size: 100px;
+   
+  
+  
+  
+  }
+
+
+
+  /* Contacts Page */
 
 
 }
@@ -580,6 +655,56 @@ body {
 
 
 /* About */
+
+/* Contacts Page */
+
+
+
+  #contact-title{
+
+    font-size: 75px;
+    
+
+
+  }
+
+
+ 
+
+  .icon{
+
+    font-size: 100px;
+   
+  
+  
+  
+  }
+
+
+
+  /* Contacts Page */
+
+  /* Contacts Page */
+
+
+
+ .content-group{
+   
+  display:block
+
+ }
+
+
+ .icon-group{
+
+  display: flex;
+  flex-direction: row;
+
+ }
+
+  /* Contacts Page */
+
+
 
 }
 

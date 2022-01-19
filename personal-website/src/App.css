@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Advent+Pro&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Oswald:wght@400;600&display=swap');
+
+
+
+/* color schemes
+https://cssgradient.io/shades-of-blue/ Alice Blue
+https://mycolor.space/?hex=%23353C4A&sub=1 Natural pallette
+
+*/
 
 body { 
   background-image: url("images/nasa-Q1p7bh3SHj8-unsplash.jpg");
-  /* https://unsplash.com/photos/2S2F2exmbhw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
   background-repeat: no-repeat; 
   background-attachment: fixed; 
   background-size: cover;
@@ -33,7 +40,7 @@ body {
 
 .subtitle{
 
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin-bottom:40px;
   color:#F0F8FF;
 
@@ -44,7 +51,7 @@ body {
 .link-text{
 
   color:#0c94fa;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   font-size: 30px;
   transition: color 1s;
 
@@ -62,7 +69,7 @@ body {
 
 .about-text{
 
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 20px;
  
 
@@ -109,7 +116,7 @@ body {
 
 #image-credit{
 
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
   position:absolute;
   top:100px;
   right:25px;
@@ -198,7 +205,8 @@ body {
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
-  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  font-family: 'Bebas Neue', cursive;
   animation: typing 1.5s linear forwards;
 
 }
@@ -210,7 +218,7 @@ body {
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
   animation: typing 1.5s linear 1.5s forwards;
 
 }
@@ -255,7 +263,7 @@ body {
 
 .panel-title{
 
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   font-size: 40px;
   
   
@@ -327,12 +335,28 @@ body {
   color: #F0F8FF;
   border-radius: 20px;
   transform: rotateY(180deg);
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .card-body{
   display: flex;
   flex-direction: column;
+}
+
+
+.card-title{
+
+  
+  color:#0c94fa;
+
+}
+
+
+.card-subtitle{
+
+  color:#0c94fa;
+
+
 }
 
 .card-divider{
@@ -360,6 +384,8 @@ body {
 
 
 }
+
+
 
 
 .card-back-inner{
@@ -439,7 +465,7 @@ body {
 
 .contact-title{
 
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   font-size: 40px;
   margin-bottom:40px;
 
@@ -452,6 +478,32 @@ body {
 
 
 /* Contacts Page */
+
+
+
+
+
+@media (min-width:768px) {
+
+  /* Home Page */
+
+  #title{
+    
+    font-size: 75px;
+
+  
+  }
+ 
+
+  
+ 
+
+  /* Home Page */
+
+
+
+
+}
 
 
 
@@ -476,7 +528,7 @@ body {
    
   #intro{
     position:absolute;
-    top: 550px;
+    top: 500px;
     left: 100px; 
   }
 

@@ -25,7 +25,7 @@ export default function Education(props){
                                 <Card.Body className='card-body'>
                                     <CloseButton  onClick={()=>props.onClickReverseAnimate("e"+i)} style={{ position:"absolute", right:"20px"}} />
                                     <Card.Title style={{fontSize:"30px", width:"90%"}}>{props.educationFromJson.length!==0?props.educationFromJson[i].institute:""}</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>{props.educationFromJson.length!==0?props.educationFromJson[i].duration:""}</Card.Subtitle>
+                                    <Card.Subtitle className="card-subtitle mb-2" style={{fontSize:"20px"}}>{props.educationFromJson.length!==0?props.educationFromJson[i].duration:""}</Card.Subtitle>
                                     <div className="card-divider"></div>
                                     <Card.Text className="card-text" style={{fontSize:"25px"}}>{props.educationFromJson.length!==0?props.educationFromJson[i].cert:""}</Card.Text>
                                 </Card.Body>   

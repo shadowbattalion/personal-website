@@ -25,11 +25,10 @@ export default function Projects(props){
                         <div className="card-back">     
                             <Card.Body className='card-body'>
                                 <CloseButton  onClick={()=>props.onClickReverseAnimate("p"+i)} style={{ position:"absolute", right:"20px"}} />
-                                <Card.Title style={{fontSize:"30px", width:"90%"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].title:""}</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted" style={{fontSize:"20px"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].association:""}</Card.Subtitle>
-                                
-                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].website!=="" ? <h5>Website: <a className='website-link' href={props.projectsFromJson[i].website}>{props.projectsFromJson[i].title+" Website"}</a></h5>:""}
-                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].github!=="" ? <h5>Github: <a className='website-link' href={props.projectsFromJson[i].github}>{props.projectsFromJson[i].title+" Github"}</a></h5>:""}
+                                <Card.Title className="card-title" style={{fontSize:"30px", width:"90%"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].title:""}</Card.Title>
+                                <Card.Subtitle className="card-subtitle mb-2" style={{fontSize:"20px"}}>{props.projectsFromJson.length!==0?props.projectsFromJson[i].association:""}</Card.Subtitle>
+                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].website!=="" ? <h5>Website: <a className='website-link' href={props.projectsFromJson[i].website} target="_blank" rel="noopener noreferrer">{props.projectsFromJson[i].title+" Website"}</a></h5>:""}
+                                {props.projectsFromJson.length!==0 && props.projectsFromJson[i].github!=="" ? <h5>Github: <a className='website-link' href={props.projectsFromJson[i].github} target="_blank" rel="noopener noreferrer">{props.projectsFromJson[i].title+" Github"}</a></h5>:""}
                                 <div className="card-divider"></div>
                                 <Card.Text className="card-text" style={{fontSize:"25px"}}>{props.projectsFromJson.length!==0 && props.projectsFromJson[i].description!==""?props.projectsFromJson[i].description:""}</Card.Text>
                             </Card.Body>   
